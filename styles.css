@@ -34,6 +34,16 @@ body {
     border-radius: 3rem;
 }
 
+.container2 {
+    display: flex;
+    align-items: center;
+}
+
+.read {
+    display: flex;
+    margin-right: 1rem;
+}
+
 header {
    margin-bottom: 35px;
    display: flex;
@@ -43,6 +53,7 @@ header {
 
 .caja-notificacion {
     display: flex;
+    margin-top: 0.5rem;
 }
 
 .notificaciones {
@@ -55,9 +66,23 @@ header {
     display: flex;
     justify-content: center;
     align-items:  center;
-    background-color: var(--Blue);
-        
+    background-color: var(--Blue);  
 }
+
+.notificaciones-read {
+    height: 35px;
+    width: 35px;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    margin-right: 1rem;
+    color: var(--White);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    background-color: var(--Blue);
+}
+
 
 .mark-all {
     cursor: pointer;
