@@ -1,0 +1,161 @@
+:root {
+--Red:hsl(1, 90%, 64%);
+--Blue:hsl(219, 85%, 26%);
+--White:hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+--font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    font-family:'Plus Jakarta Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 50vh;
+    min-width: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Verylightgrayishblue);
+}
+
+.container {
+    margin: 2rem;
+    width: 700px;
+    background-color: var(--White);
+    padding: 2.5rem 1.5rem;
+    border-radius: 3rem;
+}
+
+header {
+   margin-bottom: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;  
+}
+
+.caja-notificacion {
+    display: flex;
+}
+
+.notificaciones {
+    height: 35px;
+    width: 35px;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    color: var(--White);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    background-color: var(--Blue);
+        
+}
+
+.mark-all {
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+p{
+   color: var(--Darkgrayishblue);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.notif-card {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.unread {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+img {
+    width: 50px;
+    display: flex;
+}
+
+.descripcion {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+strong {
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+strong:hover {
+    color: var(--Blue);
+}
+
+.unread {
+    background-color: var(--Verylightgrayishblue);
+}
+
+.unread p:first-of-type::after {
+    content: "";
+    background-color: var(--Red);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.mensaje_card {
+    display: flex;
+    align-items: center;
+}
+
+.mensaje {
+   color: var(--Darkgrayishblue);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.imagen-chess {
+    margin-left: auto;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:550px) {
+        .container {
+            margin: 0;
+
+        }
+}
+
+/* a;adir cuando sea 0 el display none
+cuando haya mas de 3 not no leidas cambiar el color a verde
+crear otro boton para que haga lo contrario de no leidas */
