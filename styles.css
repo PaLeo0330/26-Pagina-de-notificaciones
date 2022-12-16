@@ -9,6 +9,7 @@
 --Darkgrayishblue: hsl(219, 12%, 42%);
 --Verydarkblue: hsl(224, 21%, 14%);
 --font-family: 'Plus Jakarta Sans', sans-serif;
+
 }
 
 * {
@@ -67,6 +68,15 @@ header {
     justify-content: center;
     align-items:  center;
     background-color: var(--Blue);  
+    
+}
+
+.notificaciones.green{
+    background-color: greenyellow;
+}
+
+.notificaciones.zero{
+    display: none !important;
 }
 
 .notificaciones-read {
@@ -80,8 +90,18 @@ header {
     display: flex;
     justify-content: center;
     align-items:  center;
-    background-color: var(--Blue);
+    background-color: #34c4e8;
+    
 }
+
+.notificaciones-read.red{
+    background-color: #ce5757;
+   
+}
+
+.notificaciones-read.one{
+    display: none !important;
+} 
 
 
 .mark-all {
@@ -138,6 +158,10 @@ strong:hover {
 
 .unread {
     background-color: var(--Verylightgrayishblue);
+}
+
+.read {
+background-color: var(--White);
 }
 
 .unread p:first-of-type::after {
